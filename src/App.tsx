@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import api from "./services/api";
 import store from './store'
 import { Catalog } from './compontens/Catalog'
+import { Cart } from './compontens/Cart'
 
 function App() {
   // const [catalog, setCatalog] = useState([]);
@@ -16,7 +17,10 @@ function App() {
 
   return (
     <Provider store={store}>
-      <Catalog />
+      <div style={{ padding: '0rem 2rem' }}>
+        <Catalog />
+        <Cart />
+      </div>
     </Provider>
   );
 }

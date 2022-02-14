@@ -21,7 +21,7 @@ export function Catalog() {
   }, [])  
 
   return (
-    <main style={{ padding: '0rem 2rem', maxWidth: '300px' }}>
+    <main style={{ maxWidth: '300px' }}>
       <h1>Catalog</h1>
       {catalog.map(product => (
         <article 
