@@ -5,8 +5,7 @@ import { State } from "../store"
  
 export function Cart() {
   const cart = useSelector<State, CartItem[]>(state => state.cart.items)
-  console.log(cart)
-  
+   
   return (
     <>
     <table>

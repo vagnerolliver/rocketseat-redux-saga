@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux'
 import { useCallback } from "react";
 
-import { addProductToCart } from '../store/modules/cart/actions'
+import { addProductToCartRequest } from '../store/modules/cart/actions'
 import { Product } from "../store/modules/cart/types";
 
 interface CatalogItemProps {
@@ -12,7 +12,7 @@ export function CatalogItem({ product }: CatalogItemProps) {
   const dispatch = useDispatch()
 
   const handleAddProductToCart = useCallback(() => {
-    dispatch(addProductToCart(product))  
+    dispatch(addProductToCartRequest(product))  
   }, [dispatch, product])  
 
   return (
