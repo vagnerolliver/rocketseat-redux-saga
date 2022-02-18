@@ -28,16 +28,16 @@ export function CatalogItem({ product }: CatalogItemProps) {
         justifyContent: 'space-between'
       }}
     >
-      <div>
+      <div style={{  minWidth: '200px'  }}>
         <strong>{product.title}</strong> {" - "}
         <strong>{product.price}</strong> {" "}
       </div>
 
-      <button type="button" onClick={handleAddProductToCart}>
+      <button type="button" onClick={handleAddProductToCart} style={{  minWidth: '100px'  }}>
         Comprar
       </button>
 
-      { hasFailedStockCheck && <span style={{ color: 'red' }}>Falta de estoque</span> }
+      { hasFailedStockCheck && <span style={{ color: 'red', flexGrow: 1, minWidth: '200px', marginLeft: 20 }}>Falta de estoque</span> }
     </article>
   )
 }

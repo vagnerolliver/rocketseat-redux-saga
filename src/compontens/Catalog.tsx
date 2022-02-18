@@ -12,7 +12,7 @@ export function Catalog() {
       .then(({ data }) => {
         setCatalog(data)
       })
-  })
+  },[])
 
 
   return (
